@@ -6,14 +6,57 @@
    <title>Practice</title>
    <style>
       body {background-color: powderblue;}
-      h1   {color: blue;}
-      p    {color: red;}
+      h1 {color: blue;}
+      p {color: red;}
+      .one{
+		  font-size:40px;
+	  }
+      #form{
+	margin-top: 13px;
+	padding-left: 40px;
+}
+ #info{
+	 border:2px solid red;
+	 padding-left: 50px;
+ }
+ 
+#password{
+	
+}
+
+#hello{
+   margin-top: 13px;
+	
+	margin-left: 49px;
+}
       </style>
 </head>
 <body>
-  <p>practice one</p> 
-  <form>
-     <button>click me</button>
-  </form>
+  <marquee class="one" behavior="alternate">practice</marquee> 
+	<div id="info">
+	<h1>Log in to see <q> with ⬇️ </q></h1>
+	<p>Email:Code@login.learn</p>
+	<p>Password:1234</p>
+	</div>
+	<form id="form">
+	<input placeholder="Email" type="email"/>
+	<br />
+<input placeholder="password"type="password"/>
+<br />
+	<input type="submit" value="log in"
+	</form>
+	
+	<p id="main-text"></p>
+   <button id="hello">say Hello </button>
+   
+   <script>
+	  function Thank() {
+		 document.getElementById("main-text").innerHTML += "Thank you  <br> for Saying <br> Hello <br> <br> <br>";
+		 
+	  }
+	  let button = document.getElementById("hello");
+	 
+ button.addEventListener("click", Thank);
+   </script>
 </body>
 </html>
